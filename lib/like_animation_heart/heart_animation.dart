@@ -7,8 +7,8 @@ class Heart extends StatefulWidget {
 
 class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
   bool isFav = false;
-  AnimationController _controller;
-  Animation<Color> _colorAnimation;
+  late AnimationController _controller;
+  late Animation<Color> _colorAnimation;
 
   @override
   void initState() {
@@ -19,7 +19,7 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
       vsync: this,
     );
 
-    _colorAnimation = ColorTween(begin: Colors.grey[400], end: Colors.red).animate(_controller);
+ //   _colorAnimation = ColorTween(begin: Colors.grey[400], end: Colors.red).animate(_controller);
 
     _controller.addListener(() {
       // print(_controller.value);

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_helper/boarding_screens/onboarding_screen.dart';
+import 'package:flutter_helper/like_animation_heart/heart_animation.dart';
 import 'package:flutter_helper/like_animation_heart/heart_animation_main.dart';
+
 
 
 void main() {
@@ -12,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Helper',
-      home: homeheartanimation(),
+      home: OnboardingScreen(),
     );
   }
 }
